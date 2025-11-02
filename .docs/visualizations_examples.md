@@ -1,7 +1,7 @@
 # Redash Visualization API: JSON Payload Examples
 
-**Version:** v10.1.0
-**Date:** 2023-11-02
+**Version:** v25.8.0 (August 2025)
+**Date:** 2025-08-01
 
 This document provides a set of realistic JSON payload examples for the Redash Visualization API.
 

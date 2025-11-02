@@ -1,7 +1,7 @@
 # Redash Query API: Validation Report
 
-**Version:** v10.1.0
-**Date:** 2023-11-02
+**Version:** v25.8.0 (August 2025)
+**Date:** 2025-08-01
 
 This document outlines the validation process and findings from the analysis of the Redash Query API.
 

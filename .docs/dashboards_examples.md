@@ -1,7 +1,7 @@
 # Redash Dashboards API: JSON Payload Examples
 
-**Version:** v10.1.0
-**Date:** 2023-11-02
+**Version:** v25.8.0 (August 2025)
+**Date:** 2025-08-01
 
 This document provides a set of realistic JSON payload examples for the Redash Dashboards API. These examples are based on the data structures defined in the Redash source code.
 
@@ -32,8 +32,8 @@ A typical response from this endpoint will be a paginated list of dashboards, wi
       "is_archived": false,
       "is_draft": false,
       "tags": ["sales", "kpi"],
-      "updated_at": "2023-11-01T12:00:00.000Z",
-      "created_at": "2023-11-01T10:00:00.000Z",
+      "updated_at": "2025-08-01T12:00:00.000Z",
+      "created_at": "2025-08-01T10:00:00.000Z",
       "version": 2,
       "is_favorite": true
     }
@@ -84,22 +84,22 @@ This endpoint returns the complete JSON structure for a single dashboard, includ
           "is_draft": false,
           "data_source_id": 1,
           "options": {},
-          "updated_at": "2023-11-01T12:00:00.000Z",
-          "created_at": "2023-11-01T10:00:00.000Z"
+          "updated_at": "2025-08-01T12:00:00.000Z",
+          "created_at": "2025-08-01T10:00:00.000Z"
         },
-        "updated_at": "2023-11-01T12:00:00.000Z",
-        "created_at": "2023-11-01T10:00:00.000Z"
+        "updated_at": "2025-08-01T12:00:00.000Z",
+        "created_at": "2025-08-01T10:00:00.000Z"
       },
-      "updated_at": "2023-11-01T12:00:00.000Z",
-      "created_at": "2023-11-01T10:00:00.000Z"
+      "updated_at": "2025-08-01T12:00:00.000Z",
+      "created_at": "2025-08-01T10:00:00.000Z"
     }
   ],
   "options": {},
   "is_archived": false,
   "is_draft": false,
   "tags": ["sales", "kpi"],
-  "updated_at": "2023-11-01T12:00:00.000Z",
-  "created_at": "2023-11-01T10:00:00.000Z",
+  "updated_at": "2025-08-01T12:00:00.000Z",
+  "created_at": "2025-08-01T10:00:00.000Z",
   "version": 2,
   "is_favorite": true,
   "can_edit": true

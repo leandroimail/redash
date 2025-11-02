@@ -1,7 +1,7 @@
 # Redash Visualization API Overview
 
-**Version:** v10.1.0
-**Date:** 2023-11-02
+**Version:** v25.8.0 (August 2025)
+**Date:** 2025-08-01
 
 This document provides a technical overview of the Redash API endpoints for managing visualizations. Visualizations are representations of data from a query, such as a chart or a table, and are a core component of Redash dashboards.
 
