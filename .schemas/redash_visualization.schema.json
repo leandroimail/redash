@@ -9,7 +9,41 @@
     "name": { "type": "string" },
     "description": { "type": ["string", "null"] },
     "options": { "type": "object" },
-    "query": { "$ref": "redash_query.schema.json" },
+    "query": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "latest_query_data_id": { "type": ["integer", "null"] },
+        "name": { "type": "string" },
+        "description": { "type": ["string", "null"] },
+        "query": { "type": "string" },
+        "query_hash": { "type": "string" },
+        "schedule": { "type": ["object", "null"] },
+        "api_key": { "type": "string" },
+        "is_archived": { "type": "boolean" },
+        "is_draft": { "type": "boolean" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "data_source_id": { "type": "integer" },
+        "options": { "type": "object" },
+        "version": { "type": "integer" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "is_safe": { "type": "boolean" },
+        "user": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "integer" },
+            "name": { "type": "string" }
+          },
+          "required": ["id", "name"]
+        },
+        "last_modified_by": { "type": ["object", "null"] }
+      },
+      "required": [
+        "id", "name", "query", "query_hash", "api_key", "is_archived", "is_draft",
+        "updated_at", "created_at", "data_source_id", "options", "version", "is_safe", "user"
+      ]
+    },
     "updated_at": { "type": "string", "format": "date-time" },
     "created_at": { "type": "string", "format": "date-time" }
   },
