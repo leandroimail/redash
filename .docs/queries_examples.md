@@ -1,7 +1,7 @@
 # Redash Query API: JSON Payload Examples
 
-**Version:** v25.8.0 (August 2025)
-**Date:** 2025-11-02
+**Version:** v10.1.0
+**Date:** 2023-11-02
 
 This document provides a set of realistic JSON payload examples for the Redash Query API.
 
@@ -26,8 +26,8 @@ A typical response from this endpoint will be a paginated list of queries, with 
       "api_key": "abcdef123456",
       "is_archived": false,
       "is_draft": false,
-      "updated_at": "2025-08-01T12:00:00.000Z",
-      "created_at": "2025-08-01T10:00:00.000Z",
+      "updated_at": "2023-11-01T12:00:00.000Z",
+      "created_at": "2023-11-01T10:00:00.000Z",
       "data_source_id": 1,
       "options": {},
       "version": 1,
@@ -59,8 +59,8 @@ This endpoint returns the complete JSON structure for a single query, including 
   "api_key": "abcdef123456",
   "is_archived": false,
   "is_draft": false,
-  "updated_at": "2025-08-01T12:00:00.000Z",
-  "created_at": "2025-08-01T10:00:00.000Z",
+  "updated_at": "2023-11-01T12:00:00.000Z",
+  "created_at": "2023-11-01T10:00:00.000Z",
   "data_source_id": 1,
   "options": {},
   "version": 1,
@@ -78,8 +78,8 @@ This endpoint returns the complete JSON structure for a single query, including 
       "name": "Sales Over Time",
       "description": "A chart showing sales trends.",
       "options": {},
-      "updated_at": "2025-08-01T12:00:00.000Z",
-      "created_at": "2025-08-01T10:00:00.000Z"
+      "updated_at": "2023-11-01T12:00:00.000Z",
+      "created_at": "2023-11-01T10:00:00.000Z"
     }
   ],
   "can_edit": true

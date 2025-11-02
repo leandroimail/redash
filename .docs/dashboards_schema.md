@@ -1,7 +1,7 @@
 # Redash Dashboard JSON Schema
 
-**Version:** v25.8.0 (August 2025)
-**Date:** 2025-11-02
+**Version:** v10.1.0
+**Date:** 2023-11-02
 
 This document provides a detailed description of the JSON structure used by the Redash Dashboards API. It includes a breakdown of all fields, their data types, and their relationships.
 
@@ -38,8 +38,8 @@ The root object representing a dashboard.
 | `is_archived` | boolean | Yes | A flag indicating if the dashboard is archived. | `false` |
 | `is_draft` | boolean | Yes | A flag indicating if the dashboard is a draft. | `false` |
 | `tags` | array | No | A list of tags associated with the dashboard. | `["sales", "kpi"]` |
-| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2025-08-01T12:00:00.000Z"` |
-| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2025-08-01T10:00:00.000Z"` |
+| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2023-11-01T12:00:00.000Z"` |
+| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2023-11-01T10:00:00.000Z"` |
 | `version` | integer | Yes | The version number of the dashboard. | `2` |
 | `is_favorite`| boolean | No | Indicates if the dashboard is favorited by the current user. | `true` |
 
@@ -69,9 +69,9 @@ Represents a single widget within a dashboard. There are two main types of widge
 | `options` | object | Yes | A dictionary for widget-specific options. | `{}` |
 | `dashboard_id` | integer | Yes | The ID of the dashboard this widget belongs to. | `123` |
 | `text` | string | No | The text content, if the widget is a textbox. | `"This is a note."` |
-| `visualization` | object | No | The visualization object, if the widget displays a visualization. | `{...}` |
-| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2025-08-01T12:00:00.000Z"` |
-| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2025-08-01T10:00:00.000Z"` |
+| `visualization` | object | No | The visualization object, if the widget displays a visualization. For a more detailed description of the Visualization object and its API, please see the [Redash Visualization JSON Schema](./visualizations_schema.md). | `{...}` |
+| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2023-11-01T12:00:00.000Z"` |
+| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2023-11-01T10:00:00.000Z"` |
 
 #### Visualization Widget
 
@@ -83,7 +83,7 @@ A Textbox widget is used to display arbitrary text on the dashboard. It is ident
 
 ### Visualization Object
 
-Represents a visualization, which is linked to a query.
+Represents a visualization, which is linked to a query. For a more detailed description of the Visualization object and its API, please see the [Redash Visualization JSON Schema](./visualizations_schema.md).
 
 | Path JSON | Type | Required | Description | Example |
 |---|---|---|---|---|
@@ -93,8 +93,8 @@ Represents a visualization, which is linked to a query.
 | `description` | string | No | A description of the visualization. | `"A chart showing sales trends."` |
 | `options` | object | Yes | A dictionary for visualization-specific options. | `{}` |
 | `query` | object | Yes | The query object that provides data for this visualization. | `{...}` |
-| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2025-08-01T12:00:00.000Z"` |
-| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2025-08-01T10:00:00.000Z"` |
+| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2023-11-01T12:00:00.000Z"` |
+| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2023-11-01T10:00:00.000Z"` |
 
 ### Query Object
 
@@ -111,5 +111,5 @@ Represents a query that is linked to a visualization. For a more detailed descri
 | `is_draft` | boolean | Yes | A flag indicating if the query is a draft. | `false` |
 | `data_source_id` | integer | Yes | The ID of the data source this query belongs to. | `1` |
 | `options` | object | Yes | A dictionary for query-specific options. | `{}` |
-| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2025-08-01T12:00:00.000Z"` |
-| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2025-08-01T10:00:00.000Z"` |
+| `updated_at` | string | Yes | The ISO 8601 timestamp of the last update. | `"2023-11-01T12:00:00.000Z"` |
+| `created_at` | string | Yes | The ISO 8601 timestamp of the creation date. | `"2023-11-01T10:00:00.000Z"` |

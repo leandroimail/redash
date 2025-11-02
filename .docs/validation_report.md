@@ -1,7 +1,7 @@
 # Redash Dashboards API: Validation Report
 
-**Version:** v25.8.0 (August 2025)
-**Date:** 2025-11-02
+**Version:** v10.1.0
+**Date:** 2023-11-02
 
 This document outlines the validation process and findings from the analysis of the Redash Dashboards API. The documentation and JSON schema were generated based on a static analysis of the Redash source code.
 

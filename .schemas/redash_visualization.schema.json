@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Redash Visualization Schema",
+  "description": "A JSON schema for a Redash visualization.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "type": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": ["string", "null"] },
+    "options": { "type": "object" },
+    "query": { "$ref": "redash_query.schema.json" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "required": ["id", "type", "name", "options", "query", "updated_at", "created_at"]
+}

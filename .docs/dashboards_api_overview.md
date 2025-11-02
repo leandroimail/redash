@@ -1,7 +1,7 @@
 # Redash Dashboards API Overview
 
-**Version:** v25.8.0 (August 2025)
-**Date:** 2025-11-02
+**Version:** v10.1.0
+**Date:** 2023-11-02
 
 This document provides a technical overview of the Redash API endpoints for managing dashboards. The purpose of this documentation is to serve as a comprehensive reference for developers who need to interact with the Dashboards API for tasks such as backup, automation, and migration of dashboards.
 
