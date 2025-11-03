@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Redash Dashboard Schema",
+  "description": "A JSON schema for a Redash dashboard.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "slug": { "type": "string" },
+    "name": { "type": "string" },
+    "user_id": { "type": "integer" },
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "profile_image_url": { "type": "string", "format": "uri" }
+      },
+      "required": ["id", "name", "email", "profile_image_url"]
+    },
+    "layout": { "type": "array" },
+    "dashboard_filters_enabled": { "type": "boolean" },
+    "widgets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "width": { "type": "integer" },
+          "options": { "type": "object" },
+          "dashboard_id": { "type": "integer" },
+          "text": { "type": ["string", "null"] },
+          "visualization": {
+            "type": ["object", "null"],
+            "properties": {
+              "id": { "type": "integer" },
+              "type": { "type": "string" },
+              "name": { "type": "string" },
+              "description": { "type": ["string", "null"] },
+              "options": { "type": "object" },
+              "query": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "integer" },
+                  "name": { "type": "string" },
+                  "description": { "type": ["string", "null"] },
+                  "query": { "type": "string" },
+                  "query_hash": { "type": "string" },
+                  "is_archived": { "type": "boolean" },
+                  "is_draft": { "type": "boolean" },
+                  "data_source_id": { "type": "integer" },
+                  "options": { "type": "object" },
+                  "updated_at": { "type": "string", "format": "date-time" },
+                  "created_at": { "type": "string", "format": "date-time" }
+                },
+                "required": ["id", "name", "query", "query_hash", "is_archived", "is_draft", "data_source_id", "options", "updated_at", "created_at"]
+              },
+              "updated_at": { "type": "string", "format": "date-time" },
+              "created_at": { "type": "string", "format": "date-time" }
+            },
+            "required": ["id", "type", "name", "options", "query", "updated_at", "created_at"]
+          },
+          "updated_at": { "type": "string", "format": "date-time" },
+          "created_at": { "type": "string", "format": "date-time" }
+        },
+        "required": ["id", "width", "options", "dashboard_id", "updated_at", "created_at"]
+      }
+    },
+    "options": { "type": "object" },
+    "is_archived": { "type": "boolean" },
+    "is_draft": { "type": "boolean" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "version": { "type": "integer" },
+    "is_favorite": { "type": "boolean" },
+    "can_edit": { "type": "boolean" }
+  },
+  "required": [
+    "id", "slug", "name", "user_id", "user", "layout", "dashboard_filters_enabled",
+    "options", "is_archived", "is_draft", "updated_at", "created_at", "version"
+  ]
+}
